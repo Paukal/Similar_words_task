@@ -1,0 +1,87 @@
+Task 3 B
+
+Similar words
+=============
+
+This task is about similar words. Here the similarity of a word is the maximum amount of letters that can be removed from that word, where every time when one letter is removed what remains is another valid word that exists in the vocabulary.
+
+For example, let's say you have these words in the vocabulary: STOPPERS, STOPS, STOP, TOP, TO. The word STOPS has a similarity of 3: STOPS -> STOP -> TOP -> TO. Whereas the word STOPPERS has a similarity of 0, because there are no valid words you can make from it by removing a single letter.
+
+
+Task
+====
+
+Write a Lua program that finds the word with the highest similarity in a given vocabulary and prints the similarity of that word.
+
+
+Input
+=====
+
+As an input you have a text file, the text file name will be given as a parameter on the command line. In that text file - each line consists of a number L, a space and a word that has the length L. All of the words in the vocabulary are different and are made of UPPERCASE latin letters.
+
+
+Result
+======
+
+The program has to output a single number - the highest word similarity in the given vocabulary.
+
+
+Examples
+========
+
+1. Input text file content:
+   8 STOPPERS
+   5 STOPS
+   4 STOP
+   3 TOP
+   2 TO
+
+   Result: 3
+   Explanation: this example is explained above
+
+2. Input text file content:
+   4 WHAT
+   3 HAT
+   4 THIS
+   3 HIS
+   2 IS
+
+   Result: 2
+   Explanation: there are two chains of similar words: WHAT -> HAT and THIS -> HIS -> IS. THIS has a higher similarity (of 2) so the result is 2.
+
+3. Input text file content:
+   5 HOWDY
+   3 HOW
+   8 TRAINING
+   4 RAIN
+
+   Result: 0
+   Explanation: new words could not be made as you can only remove one letter at a time
+
+We add several input and result files that you can use for testing. 
+Each sample has two files in the samples/ directory:
+    sample_N.txt           contains the actual input sample
+    sample_N_result.txt    contains the expected result when using that sample
+
+
+Help
+====
+
+To download the Lua interpreter source (if you want to compile it yourself) go to https://www.lua.org/download.html
+Prebuilt packages for the most popular Operating Systems are available here: http://luabinaries.sourceforge.net/
+For Windows you can download the Lua installer from https://github.com/rjpcomputing/luaforwindows/releases
+For Mac OS X you can use "brew" to install Lua. For Linux you can use your distribution's package manager.
+
+For a quick introduction to Lua you can read: https://coronalabs.com/learn-lua/
+A more in-depth guide is the "Programming in Lua" book, the first edition is available online here: https://www.lua.org/pil/contents.html
+For a reference of a given Lua version see: https://www.lua.org/manual/VERSION/
+So for example for Lua 5.2 see: https://www.lua.org/manual/5.2/
+
+If you have any questions regarding the task or if something is not clear
+or you need more information - please feel free to write to kipras.mancevicius@oracle.com, cc: dainius.mezanskas@oracle.com
+
+
+Completion
+==========
+
+Once completed - send the resulting Lua program to kipras.mancevicius@oracle.com, cc: dainius.mezanskas@oracle.com

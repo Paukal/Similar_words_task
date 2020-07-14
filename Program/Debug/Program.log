@@ -1,0 +1,5 @@
+﻿  Program.cpp
+c:\users\paulius\documents\study n code\oracle\program\program.cpp(250): warning C4018: '>': signed/unsigned mismatch
+c:\users\paulius\documents\study n code\oracle\program\program.cpp(254): warning C4018: '<': signed/unsigned mismatch
+c:\users\paulius\documents\study n code\oracle\program\program.cpp(269): warning C4018: '<': signed/unsigned mismatch
+  Program.vcxproj -> C:\Users\Paulius\Documents\Study n code\Oracle\Debug\Program.exe
